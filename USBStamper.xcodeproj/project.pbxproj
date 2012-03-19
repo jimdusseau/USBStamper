@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC4143CE151750E100F3520B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4143CD151750E100F3520B /* Cocoa.framework */; };
+		FC4143D8151750E100F3520B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC4143D6151750E100F3520B /* InfoPlist.strings */; };
+		FC4143DA151750E100F3520B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4143D9151750E100F3520B /* main.m */; };
+		FC4143DE151750E100F3520B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FC4143DC151750E100F3520B /* Credits.rtf */; };
+		FC4143E1151750E100F3520B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4143E0151750E100F3520B /* AppDelegate.m */; };
+		FC4143E4151750E100F3520B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC4143E2151750E100F3520B /* MainMenu.xib */; };
+		FC4143EC151750E100F3520B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4143EB151750E100F3520B /* SenTestingKit.framework */; };
+		FC4143ED151750E100F3520B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4143CD151750E100F3520B /* Cocoa.framework */; };
+		FC4143F5151750E100F3520B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC4143F3151750E100F3520B /* InfoPlist.strings */; };
+		FC4143F8151750E100F3520B /* USBStamperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4143F7151750E100F3520B /* USBStamperTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC4143EE151750E100F3520B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC4143C0151750E000F3520B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC4143C8151750E100F3520B;
+			remoteInfo = USBStamper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC4143C9151750E100F3520B /* USBStamper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USBStamper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4143CD151750E100F3520B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FC4143D0151750E100F3520B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FC4143D1151750E100F3520B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FC4143D2151750E100F3520B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FC4143D5151750E100F3520B /* USBStamper-Info.plist */ = {isa = PBXFileReference; path = "USBStamper-Info.plist"; sourceTree = "<group>"; };
+		FC4143D7151750E100F3520B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC4143D9151750E100F3520B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC4143DB151750E100F3520B /* USBStamper-Prefix.pch */ = {isa = PBXFileReference; path = "USBStamper-Prefix.pch"; sourceTree = "<group>"; };
+		FC4143DD151750E100F3520B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FC4143DF151750E100F3520B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC4143E0151750E100F3520B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC4143E3151750E100F3520B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FC4143EA151750E100F3520B /* USBStamperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USBStamperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4143EB151750E100F3520B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FC4143F2151750E100F3520B /* USBStamperTests-Info.plist */ = {isa = PBXFileReference; path = "USBStamperTests-Info.plist"; sourceTree = "<group>"; };
+		FC4143F4151750E100F3520B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC4143F6151750E100F3520B /* USBStamperTests.h */ = {isa = PBXFileReference; path = USBStamperTests.h; sourceTree = "<group>"; };
+		FC4143F7151750E100F3520B /* USBStamperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USBStamperTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC4143C6151750E100F3520B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4143CE151750E100F3520B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4143E6151750E100F3520B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4143EC151750E100F3520B /* SenTestingKit.framework in Frameworks */,
+				FC4143ED151750E100F3520B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC4143BE151750E000F3520B = {
+			isa = PBXGroup;
+			children = (
+				FC4143D3151750E100F3520B /* USBStamper */,
+				FC4143F0151750E100F3520B /* USBStamperTests */,
+				FC4143CC151750E100F3520B /* Frameworks */,
+				FC4143CA151750E100F3520B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC4143CA151750E100F3520B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC4143C9151750E100F3520B /* USBStamper.app */,
+				FC4143EA151750E100F3520B /* USBStamperTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC4143CC151750E100F3520B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC4143CD151750E100F3520B /* Cocoa.framework */,
+				FC4143EB151750E100F3520B /* SenTestingKit.framework */,
+				FC4143CF151750E100F3520B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC4143CF151750E100F3520B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC4143D0151750E100F3520B /* AppKit.framework */,
+				FC4143D1151750E100F3520B /* CoreData.framework */,
+				FC4143D2151750E100F3520B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FC4143D3151750E100F3520B /* USBStamper */ = {
+			isa = PBXGroup;
+			children = (
+				FC4143DF151750E100F3520B /* AppDelegate.h */,
+				FC4143E0151750E100F3520B /* AppDelegate.m */,
+				FC4143E2151750E100F3520B /* MainMenu.xib */,
+				FC4143D4151750E100F3520B /* Supporting Files */,
+			);
+			path = USBStamper;
+			sourceTree = "<group>";
+		};
+		FC4143D4151750E100F3520B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC4143D5151750E100F3520B /* USBStamper-Info.plist */,
+				FC4143D6151750E100F3520B /* InfoPlist.strings */,
+				FC4143D9151750E100F3520B /* main.m */,
+				FC4143DB151750E100F3520B /* USBStamper-Prefix.pch */,
+				FC4143DC151750E100F3520B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC4143F0151750E100F3520B /* USBStamperTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC4143F6151750E100F3520B /* USBStamperTests.h */,
+				FC4143F7151750E100F3520B /* USBStamperTests.m */,
+				FC4143F1151750E100F3520B /* Supporting Files */,
+			);
+			path = USBStamperTests;
+			sourceTree = "<group>";
+		};
+		FC4143F1151750E100F3520B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC4143F2151750E100F3520B /* USBStamperTests-Info.plist */,
+				FC4143F3151750E100F3520B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC4143C8151750E100F3520B /* USBStamper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC4143FB151750E100F3520B /* Build configuration list for PBXNativeTarget "USBStamper" */;
+			buildPhases = (
+				FC4143C5151750E100F3520B /* Sources */,
+				FC4143C6151750E100F3520B /* Frameworks */,
+				FC4143C7151750E100F3520B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = USBStamper;
+			productName = USBStamper;
+			productReference = FC4143C9151750E100F3520B /* USBStamper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC4143E9151750E100F3520B /* USBStamperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC4143FE151750E100F3520B /* Build configuration list for PBXNativeTarget "USBStamperTests" */;
+			buildPhases = (
+				FC4143E5151750E100F3520B /* Sources */,
+				FC4143E6151750E100F3520B /* Frameworks */,
+				FC4143E7151750E100F3520B /* Resources */,
+				FC4143E8151750E100F3520B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC4143EF151750E100F3520B /* PBXTargetDependency */,
+			);
+			name = USBStamperTests;
+			productName = USBStamperTests;
+			productReference = FC4143EA151750E100F3520B /* USBStamperTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC4143C0151750E000F3520B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = FC4143C3151750E000F3520B /* Build configuration list for PBXProject "USBStamper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FC4143BE151750E000F3520B;
+			productRefGroup = FC4143CA151750E100F3520B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC4143C8151750E100F3520B /* USBStamper */,
+				FC4143E9151750E100F3520B /* USBStamperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC4143C7151750E100F3520B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4143D8151750E100F3520B /* InfoPlist.strings in Resources */,
+				FC4143DE151750E100F3520B /* Credits.rtf in Resources */,
+				FC4143E4151750E100F3520B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4143E7151750E100F3520B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4143F5151750E100F3520B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FC4143E8151750E100F3520B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC4143C5151750E100F3520B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4143DA151750E100F3520B /* main.m in Sources */,
+				FC4143E1151750E100F3520B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4143E5151750E100F3520B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4143F8151750E100F3520B /* USBStamperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC4143EF151750E100F3520B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC4143C8151750E100F3520B /* USBStamper */;
+			targetProxy = FC4143EE151750E100F3520B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC4143D6151750E100F3520B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC4143D7151750E100F3520B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FC4143DC151750E100F3520B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC4143DD151750E100F3520B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FC4143E2151750E100F3520B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC4143E3151750E100F3520B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		FC4143F3151750E100F3520B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC4143F4151750E100F3520B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC4143F9151750E100F3520B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FC4143FA151750E100F3520B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FC4143FC151750E100F3520B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "USBStamper/USBStamper-Prefix.pch";
+				INFOPLIST_FILE = "USBStamper/USBStamper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FC4143FD151750E100F3520B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "USBStamper/USBStamper-Prefix.pch";
+				INFOPLIST_FILE = "USBStamper/USBStamper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FC4143FF151750E100F3520B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/USBStamper.app/Contents/MacOS/USBStamper";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "USBStamper/USBStamper-Prefix.pch";
+				INFOPLIST_FILE = "USBStamperTests/USBStamperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FC414400151750E100F3520B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/USBStamper.app/Contents/MacOS/USBStamper";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "USBStamper/USBStamper-Prefix.pch";
+				INFOPLIST_FILE = "USBStamperTests/USBStamperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC4143C3151750E000F3520B /* Build configuration list for PBXProject "USBStamper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC4143F9151750E100F3520B /* Debug */,
+				FC4143FA151750E100F3520B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC4143FB151750E100F3520B /* Build configuration list for PBXNativeTarget "USBStamper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC4143FC151750E100F3520B /* Debug */,
+				FC4143FD151750E100F3520B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC4143FE151750E100F3520B /* Build configuration list for PBXNativeTarget "USBStamperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC4143FF151750E100F3520B /* Debug */,
+				FC414400151750E100F3520B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC4143C0151750E000F3520B /* Project object */;
+}
