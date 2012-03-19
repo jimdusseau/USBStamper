@@ -17,6 +17,7 @@
 		FC4143ED151750E100F3520B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4143CD151750E100F3520B /* Cocoa.framework */; };
 		FC4143F5151750E100F3520B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC4143F3151750E100F3520B /* InfoPlist.strings */; };
 		FC4143F8151750E100F3520B /* USBStamperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4143F7151750E100F3520B /* USBStamperTests.m */; };
+		FC4144031517519A00F3520B /* StamperContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4144021517519A00F3520B /* StamperContoller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +36,22 @@
 		FC4143D0151750E100F3520B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FC4143D1151750E100F3520B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FC4143D2151750E100F3520B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FC4143D5151750E100F3520B /* USBStamper-Info.plist */ = {isa = PBXFileReference; path = "USBStamper-Info.plist"; sourceTree = "<group>"; };
+		FC4143D5151750E100F3520B /* USBStamper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "USBStamper-Info.plist"; sourceTree = "<group>"; };
 		FC4143D7151750E100F3520B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FC4143D9151750E100F3520B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FC4143DB151750E100F3520B /* USBStamper-Prefix.pch */ = {isa = PBXFileReference; path = "USBStamper-Prefix.pch"; sourceTree = "<group>"; };
+		FC4143DB151750E100F3520B /* USBStamper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "USBStamper-Prefix.pch"; sourceTree = "<group>"; };
 		FC4143DD151750E100F3520B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FC4143DF151750E100F3520B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC4143DF151750E100F3520B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC4143E0151750E100F3520B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FC4143E3151750E100F3520B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FC4143EA151750E100F3520B /* USBStamperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USBStamperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4143EB151750E100F3520B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		FC4143F2151750E100F3520B /* USBStamperTests-Info.plist */ = {isa = PBXFileReference; path = "USBStamperTests-Info.plist"; sourceTree = "<group>"; };
+		FC4143F2151750E100F3520B /* USBStamperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "USBStamperTests-Info.plist"; sourceTree = "<group>"; };
 		FC4143F4151750E100F3520B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FC4143F6151750E100F3520B /* USBStamperTests.h */ = {isa = PBXFileReference; path = USBStamperTests.h; sourceTree = "<group>"; };
+		FC4143F6151750E100F3520B /* USBStamperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USBStamperTests.h; sourceTree = "<group>"; };
 		FC4143F7151750E100F3520B /* USBStamperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USBStamperTests.m; sourceTree = "<group>"; };
+		FC4144011517519A00F3520B /* StamperContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StamperContoller.h; sourceTree = "<group>"; };
+		FC4144021517519A00F3520B /* StamperContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StamperContoller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 			children = (
 				FC4143DF151750E100F3520B /* AppDelegate.h */,
 				FC4143E0151750E100F3520B /* AppDelegate.m */,
+				FC4144011517519A00F3520B /* StamperContoller.h */,
+				FC4144021517519A00F3520B /* StamperContoller.m */,
 				FC4143E2151750E100F3520B /* MainMenu.xib */,
 				FC4143D4151750E100F3520B /* Supporting Files */,
 			);
@@ -262,6 +267,7 @@
 			files = (
 				FC4143DA151750E100F3520B /* main.m in Sources */,
 				FC4143E1151750E100F3520B /* AppDelegate.m in Sources */,
+				FC4144031517519A00F3520B /* StamperContoller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
