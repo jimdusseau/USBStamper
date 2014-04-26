@@ -60,15 +60,14 @@
 -(void)promptForStamping:(NSString *)devicePath
 {
    NSString *messageString = [NSString stringWithFormat:@"Do you want to copy the Payload onto %@?", [devicePath lastPathComponent]];
-   NSString *infoString = @"Warning: This will format the drive";
-   NSAlert *alert = [NSAlert alertWithMessageText:messageString defaultButton:@"Format and Stamp" alternateButton:@"Ignore Drive" otherButton:nil informativeTextWithFormat:infoString];
+   NSAlert *alert = [NSAlert alertWithMessageText:messageString defaultButton:@"Format and Stamp" alternateButton:@"Ignore Drive" otherButton:nil informativeTextWithFormat:@"Warning: This will format the drive"];
    
    NSInteger returnCode = [alert runModal];
    if(returnCode == NSAlertDefaultReturn)
    {
+     __weak typeof(self) weakSelf = self;
       [stampingQueue addOperationWithBlock:^{
-         //TODOJDD do this without capturing self. Break up this class
-         [self stampDevice:devicePath];
+         [weakSelf stampDevice:devicePath];
       }];
    }
 }
@@ -122,7 +121,7 @@
    [[[NSWorkspace sharedWorkspace] notificationCenter] removeObserver:self];
    
    [stampingQueue setSuspended:YES];
-   [stampingQueue waitUntilAllOperationsAreFinished]; //TODOJDD this isn't going to do what I thought because the queue captures self. Fix this
+   [stampingQueue waitUntilAllOperationsAreFinished];
 }
 
 

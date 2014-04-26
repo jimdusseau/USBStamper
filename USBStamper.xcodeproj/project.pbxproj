@@ -13,7 +13,6 @@
 		FC4143DE151750E100F3520B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FC4143DC151750E100F3520B /* Credits.rtf */; };
 		FC4143E1151750E100F3520B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4143E0151750E100F3520B /* AppDelegate.m */; };
 		FC4143E4151750E100F3520B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC4143E2151750E100F3520B /* MainMenu.xib */; };
-		FC4143EC151750E100F3520B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4143EB151750E100F3520B /* SenTestingKit.framework */; };
 		FC4143ED151750E100F3520B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4143CD151750E100F3520B /* Cocoa.framework */; };
 		FC4143F5151750E100F3520B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC4143F3151750E100F3520B /* InfoPlist.strings */; };
 		FC4143F8151750E100F3520B /* USBStamperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4143F7151750E100F3520B /* USBStamperTests.m */; };
@@ -44,8 +43,7 @@
 		FC4143DF151750E100F3520B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC4143E0151750E100F3520B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FC4143E3151750E100F3520B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		FC4143EA151750E100F3520B /* USBStamperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USBStamperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC4143EB151750E100F3520B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FC4143EA151750E100F3520B /* USBStamperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USBStamperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4143F2151750E100F3520B /* USBStamperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "USBStamperTests-Info.plist"; sourceTree = "<group>"; };
 		FC4143F4151750E100F3520B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FC4143F6151750E100F3520B /* USBStamperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USBStamperTests.h; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC4143EC151750E100F3520B /* SenTestingKit.framework in Frameworks */,
 				FC4143ED151750E100F3520B /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				FC4143C9151750E100F3520B /* USBStamper.app */,
-				FC4143EA151750E100F3520B /* USBStamperTests.octest */,
+				FC4143EA151750E100F3520B /* USBStamperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				FC4143CD151750E100F3520B /* Cocoa.framework */,
-				FC4143EB151750E100F3520B /* SenTestingKit.framework */,
 				FC4143CF151750E100F3520B /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -194,8 +190,8 @@
 			);
 			name = USBStamperTests;
 			productName = USBStamperTests;
-			productReference = FC4143EA151750E100F3520B /* USBStamperTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = FC4143EA151750E100F3520B /* USBStamperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -203,7 +199,8 @@
 		FC4143C0151750E000F3520B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = FC4143C3151750E000F3520B /* Build configuration list for PBXProject "USBStamper" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -329,8 +326,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -344,7 +346,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -356,8 +360,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -365,7 +374,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
@@ -375,6 +386,7 @@
 		FC4143FC151750E100F3520B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "USBStamper/USBStamper-Prefix.pch";
 				INFOPLIST_FILE = "USBStamper/USBStamper-Info.plist";
@@ -386,6 +398,7 @@
 		FC4143FD151750E100F3520B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "USBStamper/USBStamper-Prefix.pch";
 				INFOPLIST_FILE = "USBStamper/USBStamper-Info.plist";
@@ -398,13 +411,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/USBStamper.app/Contents/MacOS/USBStamper";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "USBStamper/USBStamper-Prefix.pch";
 				INFOPLIST_FILE = "USBStamperTests/USBStamperTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -412,13 +425,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/USBStamper.app/Contents/MacOS/USBStamper";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "USBStamper/USBStamper-Prefix.pch";
 				INFOPLIST_FILE = "USBStamperTests/USBStamperTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -441,6 +454,7 @@
 				FC4143FD151750E100F3520B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC4143FE151750E100F3520B /* Build configuration list for PBXNativeTarget "USBStamperTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +463,7 @@
 				FC414400151750E100F3520B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
